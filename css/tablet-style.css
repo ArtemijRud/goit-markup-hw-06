@@ -94,4 +94,56 @@ max-width: 496px;
 }
 
 /* ============== /MOBILE HERO SECTION ============== */
+
+
+/* ============== TABLET TWO SECTION ============== */
+
+.display-section {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.calcul {
+margin-left: 24px;
+}
+/* ============== /TABLET TWO SECTION ============== */
+
+
+/* ============== TABLET THREE SECTION ============== */
+
+.section-display {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 108px;
+    gap: 24px;
+}
+
+/* ============== /TABLET THREE SECTION ============== */
+
+
+
+
+/* ============== TABLET FOOTER SECTION ============== */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+}
+
+.logo-footer {
+display: flex;
+justify-content: flex-start;
+margin-left: 20px;
+}
+
+.footer-social-section {
+    width: 208px;
+}
+
+/* ============== /TABLET FOOTER SECTION ============== */
+
+
 }
