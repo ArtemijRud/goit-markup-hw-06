@@ -24,6 +24,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 display: flex;
 }
 
+.page-header-container {
+  margin-left: 156px;
+}
+
 .flex-nav {
 display: flex;
 align-items: center;
@@ -218,6 +222,7 @@ margin-bottom: 8px;
 
 .display-section {
 display: flex;
+flex-wrap: nowrap;
 gap: 24px;
 }
 
@@ -249,9 +254,9 @@ min-width: 264px;
 /* section 3 */
 
 .our-team-section {
-padding: 120px 0;
+/* padding: 120px 0; */
 width: 1440px;
-height: 732px;
+/* height: 732px; */
 background:  #F4F4FD;
 }
 
@@ -263,6 +268,7 @@ background:  #F4F4FD;
 .section-display {
   display: flex;
   gap: 24px;
+  margin-left: 0;
   }
 
 .our-section-item {
@@ -387,7 +393,7 @@ font-weight: 700;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-margin-top: 120px;
+margin-top: 0;
 margin-bottom: 72px;
 }
 
@@ -414,6 +420,7 @@ overflow: hidden;
 }
 
 .text-overlay {
+display: block;
 position: absolute;
 top: 0;
 left: 0;
@@ -441,6 +448,7 @@ padding: 40px 32px;
   border: 1px solid #E7E9FC;
   border-top: none;
 padding: 32px 16px;
+margin-bottom: 0;
 }
 
 .our-portfolio-item-header {
@@ -473,7 +481,7 @@ padding: 100px 0;
 .footer-container {
 display: flex;
 flex-direction: column;
-margin-right: 120px;
+margin-right: 80px;
 }
 
 .footer-section .container {
@@ -482,6 +490,7 @@ display: flex;
 
 .footer-column {
 display: flex;
+flex-wrap: nowrap;
 align-items: baseline
 }
 
@@ -572,9 +581,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: #f4f4fd;
 }
 
-.container-footer-form-wraper {
-margin-left: 80px;
-}
 
 .container-footer-par {
 color: #FFFFFF;
@@ -641,249 +647,7 @@ cursor: pointer;
 /* ============== /FOOTER ============== */
 
 
-/* *============= BACKDROP STYLES ============* */
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999999999;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.40);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-/* *============= /BACKDROP STYLES ===========* */
-
-
-/* *============= MODAL WINDOW STYLES ============* */
-
-.modal {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 408px;
-min-height: 584px;
-border-radius: 4px;
-background-color: #FCFCFC;
-padding: 72px 24px 24px 24px;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-transition:  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-bth {
-display: flex;
-align-items: center;
-justify-content: center;
-position: absolute;
-top: 24px;
-right: 24px;
-width: 24px;
-height: 24px;
-padding: 0;
-border-radius: 50%;
-border: 1px solid rgba(0, 0, 0, 0.10);
-background-color: #E7E9FC;
-line-height: 0;
-fill: #2E2F42;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-bth:hover, 
-.modal-close-bth:focus {
-  background-color: #404BBF;
-  fill: #FFFFFF;
-  border: none;
-}
-
-.modal-close-btn-icon {
-background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.rewiew-form-description {
-color: #2E2F42;
-text-align: center;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.02em;
-margin-bottom: 16px;
-}
-
-/* *============= /MODAL WINDOW STYLES ============* */
-
-/* *============= REWIEW FORM STYLES ============* */
-
-.rewiew-form-field-label {
-  display: block;
-  color:  #8E8F99;
-font-size: 12px;
-font-weight: 400;
-line-height: 1.17;
-letter-spacing: 0.04em;
-margin-bottom: 4px;
-}
-
-.rewiew-fild-wrapper {
-margin-bottom: 8px;
-}
-
-.rewiew-fild-wrapper-area {
-margin-bottom: 16px;
-}
-
-.rewiew-form-input-wraper {
-  position: relative;
-}
-
-.rewiew-form-field {
-width: 100%;
-height: 40px;
-border-radius: 4px;
-background-color: transparent;
-outline: transparent;
-border: 1px solid rgba(46, 47, 66, 0.40);
-padding-left: 38px;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.rewiew-form-field:focus {
-border-color: #4D5AE5;
-outline-color: transparent;
-outline-offset: 4px;
-}
-
-.rewiew-form-field-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-color:#2E2F42;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.rewiew-form-field:focus + .rewiew-form-field-icon {
-fill: #4D5AE5;
-}
-
-.rewiew-form-message {
-width: 100%;
-height: 120px;
-border-radius: 4px;
-border: 1px solid rgba(46, 47, 66, 0.40);
-resize: none;
-padding: 8px 16px;
-color: rgba(46, 47, 66, 0.40);
-background-color: transparent;
-outline: transparent;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.rewiew-form-message::placceholder {
-color: rgba(46, 47, 66, 0.40));
-}
-
-.rewiew-form-message:focus {
-  border-color: #4D5AE5;
-  outline-color: transparent;
-  outline-offset: 4px;
-}
-
-.rewiew-form-checkbox-wrapper {
-  margin-bottom: 24px;
-}
-
-.rewiew-form-checkbox-label {
-color:  #8E8F99;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-}
-
-.privacy-policy-link {
-  color: #4D5AE5;
-   font-size: 12px;
-   line-height: 1.16px;
-  letter-spacing: 0.04em;
-  text-decoration-line: underline;
-}
-
-.rewie-our-form-checkbox {
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 16px;
-height: 16px;
-border: 1px solid rgba(46, 47, 66, 0.40);
-border-radius: 2px;
-cursor: pointer;
-fill: transparent;
-margin-right: 8px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.rewiew-form-checkbox:checked 
-+ .rewiew-form-checkbox-label 
-.rewie-our-form-checkbox {
-  background-color: #404BBF;
-  fill: #F4F4FD;
-  border:none;
-}
-
-.rewiew-form-checkbox:focus 
-+ .rewiew-form-checkbox-label 
-.rewie-our-form-checkbox {
-outline: 2px solid rgba(0, 0, 255, 0.5);
-}
-/* *============= /REWIEW FORM STYLES ============* */
-
-/* ============= BUTTON STYLES ============ */
-
-.review-form-button {
-display: block;
-min-width: 169px;
-height: 56px;
-padding: 16px 32px;
-align-items: flex-start;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #ffffff;
-gap: 10px;
-border: none;
-border-radius: 4px;
-background-color: #4D5AE5;
-cursor: pointer;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-margin-left: 95px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-form-text {
-  text-align: center;
-  font-size: 16px;
-}
-
-.review-form-button:hover,
-.review-form-button:focus {
-background-color: #404BBF;
-}
-
-/* ============= /BUTTON STYLES ============ */
 
 
 }

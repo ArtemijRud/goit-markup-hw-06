@@ -226,6 +226,10 @@ fill: #f4f4fd;
 
 /* ============= MOBILE BACKDROP STYLES============== */
 
+.backdrop {
+    display: none;
+}
+
 .mobile-backdrop {
 position: fixed;
 top: 0;
@@ -661,7 +665,7 @@ fill: #f4f4fd;
 
 .our-portfolio-section {
 padding-top: 96px;
-padding-bottom: 96px;
+padding-bottom: 48px;
 background: #FFFFFF;
 }
     
@@ -688,7 +692,40 @@ column-gap: 48px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    .text-item {
+  border: 1px solid #E7E9FC;
+  border-top: none;
+padding: 32px 16px;
+margin-bottom: 48px;
+}
 
+.our-portfolio-item-header {
+color: #2e2f42;
+font-family: Roboto, sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em;
+margin-bottom: 8px;
+}
+
+.our-portfolio-text {
+color: var(--SLATE, #434455);
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.02em
+}
+
+    .overlay-wrapper {
+    
+    }
+
+    .text-overlay {
+        display: none;
+    }
+    
 
 
 /* ============== /MOBILE OUR PORTFOLIO SECTION ============== */
