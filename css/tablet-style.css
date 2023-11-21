@@ -130,6 +130,15 @@ margin-left: 24px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 24px;
+}
+
+.overlay-wrapper {
+  
+}
+
+.portfolio-border {
+  width: 356px;
 }
 
 
@@ -155,6 +164,10 @@ margin-left: 20px;
 .footer-social-section {
 
     padding: 0;
+}
+
+.footer-social-paragraph {
+  display: block;
 }
 
 .footer-column {
